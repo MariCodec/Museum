@@ -13,7 +13,131 @@
     />
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header
+      id="toTop"
+      class="header"
+    >
+      <div class="header__content">
+        <div class="top-bar">
+          <div class="top-bar__icons">
+            <a
+              href="#menu"
+              class="icon"
+            >
+              <img
+                src="./icon/menu.svg"
+                alt="icon menu"
+              />
+            </a>
+            <a
+              class="top-bar__logo-link"
+              href="#toTop"
+            >
+              <img
+                class="top-bar__logo"
+                src="images/logo.svg"
+                alt="NA MU logo"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <h1 class="header__title">ХУДОЖНІЙ МУЗЕЙ</h1>
+          <button class="button">
+            КВИТКИ
+            <span class="button-array">></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <aside
+      id="menu"
+      class="menu page__menu"
+    >
+      <div class="menu__content">
+        <div class="menu__top">
+          <a
+            href="#"
+            class="icon icon--close"
+          >
+            <img
+              src="./icon/close-icon.svg"
+              alt="close icon"
+            />
+          </a>
+
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#recommended"
+                >
+                  Галерея
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#categories"
+                >
+                  Про Нас
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#about"
+                >
+                  Виставки та події
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#about"
+                >
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu__bottom">
+          <strong>Графік роботи</strong>
+          <div class="schedule">
+            <p class="schedule__time">
+              <strong>12:00 — 20:00</strong>
+              середа
+            </p>
+            <p class="schedule__time">
+              <strong>12:00 — 20:00</strong>
+              четвер
+            </p>
+            <p class="schedule__time">
+              <strong>12:00 — 20:00</strong>
+              п’ятниця
+            </p>
+            <p class="schedule__time">
+              <strong>11:00 — 19:00</strong>
+              субота
+            </p>
+            <p class="schedule__time">
+              <strong>11:00 — 19:00</strong>
+              неділя
+            </p>
+          </div>
+          <div class="description">
+            <p>
+              Вихідні: понеділок, вівторок Каса припиняє роботу за 1 годину до
+              закриття музею
+            </p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>

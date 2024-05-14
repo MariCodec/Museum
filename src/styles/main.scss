@@ -1,7 +1,15 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import 'blocks/header';
+@import 'blocks/menu';
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background: $c-gray;
+  margin: 0;
+  padding: 0;
 }
