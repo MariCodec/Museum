@@ -16,6 +16,7 @@
       column-gap: 30px;
       grid-template-columns: repeat(6, 1fr);
     }
+
     @include on-desktop {
       grid-template-columns: repeat(12, 1fr);
     }
@@ -23,6 +24,7 @@
 
   &__logo {
     grid-column: 1;
+
     // margin: auto 0;
     @include on-tablet {
       grid-column: 1;
@@ -32,6 +34,7 @@
   &__icons {
     margin: auto 0;
     text-align: right;
+
     @include on-tablet {
       grid-column: 1;
       text-align-last: left;
@@ -60,6 +63,7 @@
       span {
         font-weight: 600;
         display: block;
+
         @include on-tablet {
           display: inline-block;
         }
@@ -77,31 +81,8 @@
     }
   }
 }
+
 .nav__list {
   display: grid;
   grid-template-columns: repeat($columns, 1fr);
 }
-
-.footer__info {
-}
-
-.schedule__title {
-}
-.schedule__time {
-}
-.footer__contact {
-}
-.toTop {
-}
-.footer__bottom {
-}
-// .nav {
-// }
-// .menu__nav {
-// }
-// .nav__list {
-// }
-// .nav__item {
-// }
-// .nav__link {
-// }

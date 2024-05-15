@@ -1,5 +1,6 @@
 .menu {
   @include content-padding-inlain;
+
   width: 100%;
   background-color: $bc-color-top-bar;
   color: white;
@@ -18,8 +19,9 @@
     opacity: 1;
     pointer-events: all;
   }
-  @include on-tablet{
-        padding-block: 40px;
+
+  @include on-tablet {
+    padding-block: 40px;
   }
 
   &__top {
@@ -27,8 +29,8 @@
     column-gap: 28px;
     padding-bottom: 24px;
     border-bottom: 1px solid $color-line;
-    @include on-tablet {
 
+    @include on-tablet {
       padding: 0;
     }
   }
@@ -63,10 +65,10 @@
     @include on-tablet {
       display: flex;
       justify-content: space-between;
-
     }
+
     @include on-desktop {
-           padding-block: 448px;
+      padding-block: 448px;
     }
   }
 }
@@ -79,17 +81,19 @@
   margin-top: 24px;
   font-size: 14px;
   line-height: 21px;
+
   @include on-tablet {
     display: flex;
     align-items: center;
     margin: 0;
     width: 50%;
 
-.schedule__title{
-display: block;
-}
+    .schedule__title {
+      display: block;
+    }
   }
 }
+
 .schedule {
   @include on-tablet {
     display: flex;
@@ -98,17 +102,17 @@ display: block;
 
     &__time {
       margin: 0;
-
     }
     p {
       margin: 0;
     }
   }
 }
+
 .description {
   margin-top: 16px;
+
   @include on-tablet {
-    // margin: 0;
     &__text {
       margin: 0;
     }
