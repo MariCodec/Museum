@@ -1,14 +1,14 @@
 .menu {
   @include content-padding-inlain;
-
+  width: 100%;
   background-color: $bc-color-top-bar;
   color: white;
+
   padding-block: 27px;
 
-  // font-family: IBM Plex Sans;
-
+  z-index: 100;
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.5s;
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -18,12 +18,19 @@
     opacity: 1;
     pointer-events: all;
   }
+  @include on-tablet{
+        padding-block: 40px;
+  }
 
   &__top {
     display: flex;
     column-gap: 28px;
     padding-bottom: 24px;
     border-bottom: 1px solid $color-line;
+    @include on-tablet {
+
+      padding: 0;
+    }
   }
 
   .nav {
@@ -34,6 +41,11 @@
       display: flex;
       gap: 24px;
       flex-wrap: wrap;
+
+      @include on-tablet {
+        column-gap: 20px;
+        width: 220px;
+      }
     }
 
     &__item {
@@ -46,6 +58,17 @@
       line-height: 16px;
     }
   }
+
+  &__content {
+    @include on-tablet {
+      display: flex;
+      justify-content: space-between;
+
+    }
+    @include on-desktop {
+           padding-block: 448px;
+    }
+  }
 }
 
 .icon--close {
@@ -56,8 +79,38 @@
   margin-top: 24px;
   font-size: 14px;
   line-height: 21px;
-}
+  @include on-tablet {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 50%;
 
+.schedule__title{
+display: block;
+}
+  }
+}
+.schedule {
+  @include on-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    height: 105px;
+
+    &__time {
+      margin: 0;
+
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
 .description {
   margin-top: 16px;
+  @include on-tablet {
+    // margin: 0;
+    &__text {
+      margin: 0;
+    }
+  }
 }

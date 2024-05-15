@@ -12,7 +12,7 @@
       href="./styles/main.scss"
     />
   </head>
-  <body>
+  <body class="opacity">
     <header
       id="toTop"
       class="header"
@@ -105,8 +105,8 @@
           </nav>
         </div>
         <div class="menu__bottom">
-          <strong>Графік роботи</strong>
           <div class="schedule">
+            <p class="schedule__title">Графік роботи</p>
             <p class="schedule__time">
               <strong>12:00 — 20:00</strong>
               середа
@@ -129,7 +129,7 @@
             </p>
           </div>
           <div class="description">
-            <p>
+            <p class="description__text">
               Вихідні: понеділок, вівторок Каса припиняє роботу за 1 годину до
               закриття музею
             </p>
@@ -137,7 +137,111 @@
         </div>
       </div>
     </aside>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img
+              src="images/logo.svg"
+              alt="NA MU LOGO"
+            />
+          </div>
+          <div class="footer__icons">
+            <img
+              src="./icon/facebook-icon.svg"
+              alt="icon facebook"
+              class="icon"
+            />
+            <img
+              src="./icon/instagram.svg"
+              alt="icon instagram"
+              class="icon"
+            />
+          </div>
 
+          <!-- <div class="footer__info"> -->
+          <div class="schedule">
+            <p class="schedule__title">Графік роботи</p>
+            <p class="schedule__time">
+              <span>12:00 — 20:00</span>
+
+              середа
+            </p>
+            <p class="schedule__time">
+              <span>12:00 — 20:00</span>
+
+              четвер
+            </p>
+            <p class="schedule__time">
+              <span>12:00 — 20:00</span>
+
+              пятниця
+            </p>
+            <p class="schedule__time">
+              <span>11:00 — 19:00</span>
+
+              субота
+            </p>
+            <p class="schedule__time">
+              <span>11:00 — 19:00</span>
+
+              неділя
+            </p>
+            <p>
+              Вихідні понеділок, вівторок
+              <br />
+              Каса припиняє роботу за 1 годину до закриття музею
+            </p>
+          </div>
+          <div class="contact">
+            <p class="contact__title">Контакти:</p>
+
+            вул. М. Грушевського, 6; Київ, 01001 тел. +38 (044) 278-13-57 факс
+            +38 (044) 278-74-54 e-mail: info@namu.kiev.ua
+            <!-- </div> -->
+          </div>
+          <div class="toTop"><a href="#toTop"></a></div>
+          <div class="footer__bottom">
+            <nav class="nav menu__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a
+                    class="nav__link"
+                    href="#recommended"
+                  >
+                    Галерея
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__link"
+                    href="#categories"
+                  >
+                    Про Нас
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__link"
+                    href="#about"
+                  >
+                    Виставки та події
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__link"
+                    href="#about"
+                  >
+                    Контакти
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="scripts/main.js"></script>
   </body>
 </html>
